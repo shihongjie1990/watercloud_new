@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="67px" height="68px" viewBox="0 0 67 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-648.000000, -294.000000)">
+            <g id="Group-2-Copy-9" transform="translate(629.000000, 295.000000)">
+                <g id="Group-17" transform="translate(20.000000, 0.000000)">
+                    <g id="Group-10-Copy-7">
+                        <g id="Group-16">
+                            <g id="Group-10-Copy">
+                                <circle id="Oval-4" stroke="#1E4344" cx="32.3529412" cy="32.3529412" r="32.3529412"></circle>
+                                <path d="M15.0980392,5.39215686 C7.61781578,9.79451954 2.05937553,17.1547152 -1.91846539e-13,25.8823529 M0,39.9019608 C1.07347241,44.71828 3.32996451,49.1256714 6.47058824,52.8431373 M11.8627451,59.3137255 C17.393757,63.3753155 24.2828904,65.7843137 31.7513382,65.7843137 C35.3507922,65.7843137 38.8156827,65.2247507 42.0588235,64.1903033 M55,55 C59.2273587,50.8597135 62.270413,45.6722149 63.627451,39.9019608 M64.7058824,33.4313725 C64.7058824,18.9518102 55.6916856,6.6444262 43.1372549,2.15686275" id="Oval-4-Copy-6" stroke="#69D7A8" stroke-width="2"></path>
+                                <ellipse id="Oval-4-Copy" stroke-opacity="0.689651268" stroke="#295B5C" cx="32.3529412" cy="32.8921569" rx="26.8723055" ry="27.3699407"></ellipse>
+                                <ellipse id="Oval-4-Copy-2" stroke-opacity="0.689651268" stroke="#295B5C" fill-opacity="0.233497509" fill="#1F6365" cx="32.3529412" cy="32.8921569" rx="24.8817643" ry="25.3793996"></ellipse>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="加号" transform="translate(21.450000, 23.100000)" fill-rule="nonzero">
+                        <g id="Group">
+                            <rect id="Rectangle" fill="#000000" opacity="0" x="0" y="2.475" width="20.625" height="20.625"></rect>
+                            <polygon id="Path" fill="#69D7A8" points="21.4467143 12.2190005 12.1364816 12.2190005 12.1364816 21.383257 9.24684894 21.383257 9.24684894 12.2190005 0 12.2190005 0 9.16425651 9.24684894 9.16425651 9.24684894 0 12.1364816 0 12.1364816 9.16425651 21.4467388 9.16425651 21.4467388 12.2190005"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

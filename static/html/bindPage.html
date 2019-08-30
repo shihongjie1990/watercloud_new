@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>监管云绑定页面</title>
+    <style type="text/css">
+        /* ---图标信息--- */
+        @font-face {
+            font-family: "iconfont";
+            src: url('iconfont.eot?t=1543978249625');
+            /* IE9*/
+            src: url('iconfont.eot?t=1543978249625#iefix') format('embedded-opentype'),
+                /* IE6-IE8 */
+                url('data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAgIAAsAAAAAC9QAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsP6z7U9TLzIAAAE8AAAARAAAAFY8dk5EY21hcAAAAYAAAAB0AAAByIZzk99nbHlmAAAB9AAAA/oAAAVEcB8jzmhlYWQAAAXwAAAALwAAADYTegAPaGhlYQAABiAAAAAcAAAAJAfeA4dobXR4AAAGPAAAAA4AAAAYGAAAAGxvY2EAAAZMAAAADgAAAA4EjgOIbWF4cAAABlwAAAAfAAAAIAEYALduYW1lAAAGfAAAAUUAAAJtPlT+fXBvc3QAAAfEAAAAQwAAAFkHFsPeeJxjYGRgYOBikGPQYWB0cfMJYeBgYGGAAJAMY05meiJQDMoDyrGAaQ4gZoOIAgCKIwNPAHicY2BkYWCcwMDKwMHUyXSGgYGhH0IzvmYwYuRgYGBiYGVmwAoC0lxTGByeMbwJYm7438AQw9zA0AAUZgTJAQDjsww7eJztkUEKhDAMRV9sHUS8hxvvIQwDQg/jyvNm5R00aRzBO/jLK/2fkEICtEAyJiODbAiu1VKpeaKveeZrfqCjISs66qzLXo4Dnu6WWPX/+E/JejTeVT68Gur9u1zrUwzqewx8NzoHvh9dApsjewmQE3GgHVZ4nHVU3W/bVBS/xze+TrK4juPYbtLEre3Gzlfz4a80WZa06yq6KUUTAzQVJoYQoCGemMQDmkYqIUB7YBUIbRIPVDxME09I5eO1T0XjD0AaCGnwwHNfeYjHddIX1GHfe67Pub9z7rHP7xgxCD19hL/AHaSjKkKlLDF1w/K9Aes6i6CBEwwhcB2NxVliWF7gKPjzK5thavNKLJVZLPcMVqrNj0aj+VqGGL3yYiYV+2n845iOaxcuX76g9Ta6ga3yC0IuJyzwqh10N3rwZGd394fdXUSvOD3/EN/Ha2gRldEGGqG30MfoPvoWIVCCzgBcRSVcVjlLMzkHnmUQrgEmlURho+wii9q2LQGI0QTL5uaAkzVwdSfo+A0oDaY+WUWlCt1/Bky1CNVMyw46DaiBQYqQVag33aUysCSLGjmyCJyqOEOwO0HplAVeioskv1XtNwXgE06C5zMpprhle68sEQxnwXveo+PXNoc7mMcdhrg5DUASQBckAG3yjU33Xfd30HLPxPzFZabhGwJAKtlO0vg80Pj+js4y52Nsjo2xMZ6kgIUU4WOhc8rE/EKYuL4MJknT7KIUzyRy+ZVqXDyIzva87+IMd4/j7rGQSFQWbguSJNxeqAQnqf9DnxOnEB/9X0y4EYtxXNbTGUb3shz3H21a8y/xH/ht+iSiPDJRHflogJ6jNZ+DE5bNTavgWaWZniWlBkSFdAJJOaEikBnEkE6omQVrBvGY9yB4IaDjteVmc6vZhHdyhuEaxqR6Yt8p9LZ7vW34Ta516/XuULALBbs4+VOLrD1MKhEomAgQeW81nxqerntGf2aGT2awyddK5FyHR0Ix8g+Xi9OolNccfcd9vI+vIxZpaBmdRdfQG+gGQpLIlsQSDjqU1kOGiqAjE46SL+hQOdPApUJRaS/aijsA36Pbpmhi2ZRdOrMclVMf03dpV1DpR9OVMRtFx9EJ7AFsw3Z48PO8VCvkpaxabulaoeefSSbEQj+ZJKPV4CLkP0zLddBWUvN8nG3KQqMi1C0LWr7Q0RtzlQZj261WNR1eh33Y3wofhg/hKlxl1sLx4SGMD8PHwxfFl33Mrqbf9eKpspqwY5za5y32cTpXnxdhT99cv9QsFWwGkuLKaLgW3oEPKt2yIqYrr7qFyqWKmFbK3UqrBdXjcOn4GJ6EF4+O4LOjI4Qw/YZjTG/KEhO5lB2mH1j2HKiy6Q+AdqiKI1LQ34MqR2U/BwMoibS19QbYIkXoGmD+Ju6//uYqvsncvXXrLnMItfM1kDPKkpKRwYX19uTv9jrQlcm315lirT8m3Kdurbb3gGEe7IVf6fW6rprJHVFRxJ2k+X34vrMBsOHAnemK0L+s++TYAAB4nGNgZGBgAOKZCf/q4/ltvjJwszCAwA3dOE4E/b+BhYG5AcjlYGACiQIAFlMJDwB4nGNgZGBgbvjfwBDDwgACQJKRARWwAQBHDAJveJxjYWBgYMGCAQFoABkAAAAAAAAAQAE6AawCTgKiAAB4nGNgZGBgYGNYzcDBAAJMQMwFhAwM/8F8BgAaVwHQAHicZY9NTsMwEIVf+gekEqqoYIfkBWIBKP0Rq25YVGr3XXTfpk6bKokjx63UA3AejsAJOALcgDvwSCebNpbH37x5Y08A3OAHHo7fLfeRPVwyO3INF7gXrlN/EG6QX4SbaONVuEX9TdjHM6bCbXRheYPXuGL2hHdhDx18CNdwjU/hOvUv4Qb5W7iJO/wKt9Dx6sI+5l5XuI1HL/bHVi+cXqnlQcWhySKTOb+CmV7vkoWt0uqca1vEJlODoF9JU51pW91T7NdD5yIVWZOqCas6SYzKrdnq0AUb5/JRrxeJHoQm5Vhj/rbGAo5xBYUlDowxQhhkiMro6DtVZvSvsUPCXntWPc3ndFsU1P9zhQEC9M9cU7qy0nk6T4E9XxtSdXQrbsuelDSRXs1JErJCXta2VELqATZlV44RelzRiT8oZ0j/AAlabsgAAAB4nGNgYoAALgbsgI2RiZGZkYWRlZGNkZ2BpbQ4tYg9KTMvJTMvnT0nPxFEc2Ym5+fpggQ5ChKLi8vzi1IYGABH0w61AA==') format('woff'),
+                url('iconfont.ttf?t=1543978249625') format('truetype'),
+                /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+                url('iconfont.svg?t=1543978249625#iconfont') format('svg');
+            /* iOS 4.1- */
+        }
+
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .icon-user:before {
+            content: "\ec52";
+        }
+
+        .icon-binding:before {
+            content: "\e64f";
+        }
+
+        .icon-loading:before {
+            content: "\e627";
+        }
+
+        .icon-icon-bind:before {
+            content: "\e647";
+        }
+
+        .icon-password:before {
+            content: "\e600";
+        }
+
+        /* 动画 */
+        .fa-spin {
+            -webkit-animation: fa-spin 2s infinite linear;
+            animation: fa-spin 2s infinite linear;
+        }
+
+        .fa-pulse {
+            -webkit-animation: fa-spin 1s infinite steps(8);
+            animation: fa-spin 1s infinite steps(8);
+        }
+
+        @-webkit-keyframes fa-spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(359deg);
+                transform: rotate(359deg);
+            }
+        }
+
+        @keyframes fa-spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(359deg);
+                transform: rotate(359deg);
+            }
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            font-size: 16px;
+            background: rgba(1, 1, 1, 0.8);
+        }
+
+        div {
+            margin: 0;
+            padding: 0;
+        }
+
+        .reservoir-user {
+            width: 300px;
+            text-align: center;
+        }
+
+        .reservoir-user>div {
+            padding: 20px 0;
+        }
+
+        .reservoir-user>div>label {
+            font-weight: bold;
+            width: 65px;
+            display: inline-block;
+        }
+
+        .reservoir-user>div>i {
+            position: relative;
+            left: 32px;
+            color: #ccc;
+        }
+
+        .reservoir-user>div>input {
+            height: 30px;
+            width: 220px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            text-indent: 30px;
+            outline: none;
+        }
+
+        .user-binding {
+            display: table;
+            margin: 0 auto;
+            margin-top: calc((100vh - 200px) / 2);
+        }
+
+        .user-binding>div:first-child,
+        .user-binding>div:last-child {
+            display: table-cell;
+            border-radius: 20px;
+            box-shadow: #6e7279 0px 0px 35px 10px inset;
+            vertical-align: top;
+        }
+
+        .user-binding>div:nth-child(n+2):nth-child(-n+4) {
+            padding: 40px 20px;
+            display: table-cell;
+            text-align: center;
+        }
+
+        .user-binding>div:nth-child(n+2):nth-child(-n+4)>span {
+            display: block;
+            color: #fff;
+        }
+
+        .user-binding>div>i {
+            font-size: 50px;
+            color: #a6acb5;
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        .user-binding>div>i.icon-icon-bind:hover {
+            color: #42afef;
+            cursor: pointer;
+            box-shadow: 0px 0px 16px #42afef;
+            border-radius: 50px;
+        }
+
+        .cloud-user {
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 0;
+        }
+
+        .cloud-user>div {
+            width: 90px;
+            height: 90px;
+            border: 0.5px solid #fff;
+            border-radius: 100px;
+            margin: 10px 50px;
+            box-shadow: 1px 1px 10px #fff, -1px -1px 10px #ccc;
+            position: relative;
+        }
+
+        .cloud-user>div>img {
+            border-radius: 100px;
+            position: absolute;
+            z-index: 1;
+            left: 0;
+        }
+
+        .cloud-user>div>span {
+            position: absolute;
+            top: 30px;
+            left: 27px;
+            font-size: 20px;
+        }
+
+        .title {
+            position: absolute;
+            color: #fff;
+            width: 100%;
+            top: calc((100vh - 300px) /2);
+            text-align: center;
+            font-size: 22px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .title>span {
+            padding: 0px 95px;
+        }
+
+        .hide {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <span>水利云</span>
+        <span>中小型骨干水源工程</span>
+    </div>
+    <div class="user-binding">
+        <div class="cloud-user">
+            <div>
+                <img alt="" style="height: 100%;width: 100%;" id="cloud_user_img">
+                <span>头像</span>
+            </div>
+            <span id="cloud_user_name">（无）</span>
+        </div>
+        <div id="bind">
+            <i class="iconfont icon-icon-bind" onclick="bindUser()"></i>
+            <span>绑定</span>
+        </div>
+        <div id="binding" class="hide">
+            <i class="iconfont icon-loading fa-pulse"></i>
+            <span>绑定中</span>
+        </div>
+        <div id="binded" class="hide">
+            <i class="iconfont icon-binding"></i>
+            <span>已绑定</span>
+        </div>
+        <div id="notbind" class="hide">
+            <i class="iconfont icon-icon-bind" onclick="bindUser()"></i>
+            <span>绑定失败</span>
+        </div>
+        <div class="reservoir-user">
+            <div>
+                <!-- <label>用户名：</label> -->
+                <i class="iconfont icon-user"></i>
+                <input type="text" name="username" id="username" placeholder="请输入用户名">
+            </div>
+            <div>
+                <!-- <label>密码：</label> -->
+                <i class="iconfont icon-password"></i>
+                <input type="password" name="password" id="password" placeholder="请输入密码">
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    document.getElementById('cloud_user_img').setAttribute('src', 'wallpaper.jpg')
+    /**
+     *  原生js实现ajax
+     */
+    var Ajax = {
+        get: function (url, fn) {
+            // XMLHttpRequest对象用于在后台与服务器交换数据   
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', url, true);
+            xhr.onreadystatechange = function () {
+                // readyState == 4说明请求已完成
+                if (xhr.readyState == 4 && xhr.status == 200 || xhr.status == 304) {
+                    // 从服务器获得数据 
+                    fn.call(this, xhr.responseText);
+                }
+            };
+            xhr.send();
+        },
+        // datat应为'a=a1&b=b1'这种字符串格式，在jq里如果data为对象会自动将对象转成这种字符串格式
+        post: function (url, data, fn) {
+            show('binding')
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", url, true);
+            // 添加http头，发送信息至服务器时内容编码类型
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 304)) {
+                    fn.call(this, xhr.responseText);
+                } else {
+                    console.log(xhr.responseText)
+                }
+            };
+            xhr.send(JSON.stringify(data));
+        }
+    }
+
+    function show(id) {
+        var ids = ['bind', 'binding', 'binded', 'notbind']
+        ids.map(item => {
+            if (item === id) {
+                document.getElementById(item).className = ''
+            } else {
+                document.getElementById(item).className = 'hide'
+            }
+        })
+    }
+
+    function bindUser() {
+        var username = document.getElementById('username').value
+        var password = document.getElementById('password').value
+        Ajax.post('/user/regist', {
+            username: username,
+            password: password
+        }, (res) => {
+            var data = JSON.parse(res)
+            if (data.code === 1002) {
+                show('binded')
+                alert('绑定成功！')
+                window.location.href = 'http://www.water-data.cn:8080/water/indexorg.html'
+            } else {
+                show('notbind')
+                if (data.msg) {
+                    alert(data.msg)
+                } else {
+                    alert('用户名或密码错误！')
+                }
+            }
+        })
+    }
+
+    Ajax.get('/user/social/user', (res) => {
+        var data = JSON.parse(res)
+        document.getElementById('cloud_user_name').textContent = data.nickname
+        /* var data = res.data
+        document.getElementById('cloud_user_name').textContent = data.displayName
+        if (data.imageUrl) {
+            document.getElementById('cloud_user_img').setAttribute('src', data.imageUrl)
+        } */
+    })
+</script>
+
+</html>

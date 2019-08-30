@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="117px" height="30px" viewBox="0 0 117 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 14</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="84.0450168%" y1="65.3094586%" x2="20.8949245%" y2="26.8591257%" id="linearGradient-1">
+            <stop stop-color="#53E8F9" offset="0%"></stop>
+            <stop stop-color="#04ECD2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.2561175%" y1="83.078825%" x2="49.7810452%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#53E8F9" offset="0%"></stop>
+            <stop stop-color="#04ECD2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="53.2364376%" y1="83.078825%" x2="47.2331704%" y2="0%" id="linearGradient-3">
+            <stop stop-color="#53E8F9" offset="0%"></stop>
+            <stop stop-color="#04ECD2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-35.000000, -21.000000)">
+            <g id="Group-6" transform="translate(37.000000, 19.000000)">
+                <g id="Group-14">
+                    <text id="水利云" font-family="PingFangSC-Medium, PingFang SC" font-size="24" font-weight="400" letter-spacing="-0.1215529" fill="#53E8F9">
+                        <tspan x="44" y="25">水利云</tspan>
+                    </text>
+                    <g id="Group-7" transform="translate(0.000000, 3.000000)" stroke-width="2.4">
+                        <ellipse id="Oval" stroke="url(#linearGradient-1)" cx="17" cy="14" rx="17" ry="11.5652174"></ellipse>
+                        <path d="M17,0.608695652 L17,27.3913043" id="Line-2" stroke="url(#linearGradient-2)" stroke-linecap="round"></path>
+                        <path d="M27.8845221,5.82449865 C24.1449789,8.71781337 22.5074066,11.645879 22.9718052,14.6086957 C23.4362037,17.5715123 25.0737761,20.037852 27.8845221,22.0077149" id="Path-11" stroke="url(#linearGradient-3)" stroke-linecap="round"></path>
+                        <path d="M10.8845221,5.82449865 C7.14497892,8.71781337 5.50740661,11.645879 5.97180518,14.6086957 C6.43620375,17.5715123 8.07377606,20.037852 10.8845221,22.0077149" id="Path-11-Copy" stroke="url(#linearGradient-3)" stroke-linecap="round" transform="translate(8.389688, 13.916107) scale(-1, 1) translate(-8.389688, -13.916107) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

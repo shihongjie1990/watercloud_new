@@ -1,0 +1,31 @@
+<template>
+  <footer>
+    <div>
+      <div class="col-md-9 footer-info">
+        <div>
+          <span>技术支持：</span>
+          <span>贵州省贵阳市观山湖区湖滨路10号翔明大厦</span>
+        </div>
+        <div>
+          <span>联系电话：</span>
+          <span>0851-84111096</span>
+        </div>
+        <div>
+          <span>地址：</span>
+          <span>贵州省贵阳市观山湖区湖滨路10号翔明大厦1801</span>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div>
+          <span>隐私条款</span>
+          <span>|</span>
+          <span>用户协议</span>
+        </div>
+        <div>
+          <span>备案号：</span>
+          <span>黔ICP备17003900号-1</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</template>
