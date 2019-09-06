@@ -15,9 +15,14 @@
       <p class="notice-title"
          @click="$router.push('/home/notice')">站内公告</p>
       <div class="content">
-        <ul>
+        <ul :class="'animation-' + notices.length">
           <li v-for="item in notices"
               :key="item.id">
+            <a :title="item.title"
+               @click.prevent="hrefToNotice(item)">{{ item.title }}</a>
+          </li>
+          <li v-for="(item, index) in notices"
+              :key="index">
             <a :title="item.title"
                @click.prevent="hrefToNotice(item)">{{ item.title }}</a>
           </li>

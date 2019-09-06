@@ -27,9 +27,13 @@
             通知公告
           </div>
           <div class="notice-item">
-            <ul>
+            <ul :class="'animation-' + notices.length">
               <li v-for="item in notices"
                   :key="item.id">
+                <a @click.prevent="hrefToNotice(item)">{{ item.title }}</a>
+              </li>
+              <li v-for="(item, index) in notices"
+                  :key="index">
                 <a @click.prevent="hrefToNotice(item)">{{ item.title }}</a>
               </li>
             </ul>
@@ -324,7 +328,6 @@ video {
         white-space: nowrap;
         height: 100%;
         align-items: center;
-        animation: notice-scroll 25s linear infinite;
         li {
           line-height: 0.6rem;
           margin-right: 0.5rem;
@@ -332,19 +335,73 @@ video {
             color: #ddd;
             width: 6rem;
             display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
           }
         }
+      }
+      ul.animation-1 {
+        animation: notice-scroll-1 5s linear infinite;
+      }
+      ul.animation-2 {
+        animation: notice-scroll-2 10s linear infinite;
+      }
+      ul.animation-3 {
+        animation: notice-scroll-3 15s linear infinite;
+      }
+      ul.animation-4 {
+        animation: notice-scroll-4 20s linear infinite;
+      }
+      ul.animation-5 {
+        animation: notice-scroll-5 25s linear infinite;
       }
     }
   }
 }
 
-@keyframes notice-scroll {
+@keyframes notice-scroll-5 {
   0% {
     margin-left: 0;
   }
   100% {
     margin-left: -32.5rem;
+  }
+}
+
+@keyframes notice-scroll-4 {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -26rem;
+  }
+}
+
+@keyframes notice-scroll-3 {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -19.5rem;
+  }
+}
+
+@keyframes notice-scroll-2 {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -13rem;
+  }
+}
+
+@keyframes notice-scroll-1 {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -6.5rem;
   }
 }
 </style>

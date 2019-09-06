@@ -29,72 +29,76 @@ export default {
   data() {
     return {
       targetCoord: [50, 10],
-      items1: [{
-        name: '饮水安全',
-        category: 0,
-        active: true,
-        value: [20, 60],
-        image: 'static/images/ui/ysaq.png'
-      }, {
-        name: '农村水电',
-        category: 0,
-        active: true,
-        value: [5, 70],
-        image: 'static/images/ui/ysaq.png'
-      }, {
-        name: '河长',
-        category: 0,
-        value: [10, 80],
-        image: 'static/images/ui/ysaq.png'
-      }, {
-        name: '水库管理',
-        category: 0,
-        value: [25, 90],
-        image: 'static/images/ui/ysaq.png'
-      }, {
-        name: '水土保持',
-        category: 0,
-        value: [12, 100],
-        image: 'static/images/ui/ysaq.png'
-      }, {
-        name: '水资源',
-        category: 0,
-        value: [21, 110],
-        image: 'static/images/ui/ysaq.png'
-      }, {
-        name: '防汛抗旱',
-        category: 0,
-        value: [28, 120],
-        image: 'static/images/ui/ysaq.png'
-      }],
-      items2: [{
-        name: '国土',
-        category: 1,
-        active: true,
-        value: [75, 70],
-        image: 'static/images/ui/ysaq.png'
-      }, {
-        name: '林业',
-        category: 1,
-        active: true,
-        value: [95, 80],
-        image: 'static/images/ui/ysaq.png'
-      }, {
-        name: '环保',
-        category: 1,
-        value: [85, 90],
-        image: 'static/images/ui/ysaq.png'
-      }, {
-        name: '气象',
-        category: 1,
-        value: [90, 100],
-        image: 'static/images/ui/ysaq.png'
-      }, {
-        name: '农业',
-        category: 1,
-        value: [80, 110],
-        image: 'static/images/ui/ysaq.png'
-      }],
+      items1: [
+        {
+          name: '饮水安全',
+          category: 0,
+          active: true,
+          value: [20, 60],
+          image: 'static/images/ui/ysaq.png'
+        }, {
+          name: '农村水电',
+          category: 0,
+          active: true,
+          value: [5, 70],
+          image: 'static/images/ui/ysaq.png'
+        }, {
+          name: '河长',
+          category: 0,
+          value: [10, 80],
+          image: 'static/images/ui/ysaq.png'
+        }, {
+          name: '水库管理',
+          category: 0,
+          value: [25, 90],
+          image: 'static/images/ui/ysaq.png'
+        }, {
+          name: '水土保持',
+          category: 0,
+          value: [12, 100],
+          image: 'static/images/ui/ysaq.png'
+        }, {
+          name: '水资源',
+          category: 0,
+          value: [21, 110],
+          image: 'static/images/ui/ysaq.png'
+        }, {
+          name: '防汛抗旱',
+          category: 0,
+          value: [28, 120],
+          image: 'static/images/ui/ysaq.png'
+        }
+      ],
+      items2: [
+        {
+          name: '国土',
+          category: 1,
+          active: true,
+          value: [75, 70],
+          image: 'static/images/ui/ysaq.png'
+        }, {
+          name: '林业',
+          category: 1,
+          active: true,
+          value: [95, 80],
+          image: 'static/images/ui/ysaq.png'
+        }, {
+          name: '环保',
+          category: 1,
+          value: [85, 90],
+          image: 'static/images/ui/ysaq.png'
+        }, {
+          name: '气象',
+          category: 1,
+          value: [90, 100],
+          image: 'static/images/ui/ysaq.png'
+        }, {
+          name: '农业',
+          category: 1,
+          value: [80, 110],
+          image: 'static/images/ui/ysaq.png'
+        }
+      ],
       curveness: 0.5
     }
   },
