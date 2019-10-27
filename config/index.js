@@ -14,8 +14,8 @@ module.exports = {
       '/api': {
         // 测试环境
         // target: 'http://192.168.100.147:8080',
-        target: 'http://192.168.100.119:8080',
-        // target: 'http://paas.water-data.cn:31058',
+        // target: 'http://192.168.100.119:8080',
+        target: 'http://paas.water-data.cn:31058',
         // target: 'http://192.168.100.199:8080/portal-server', //调用本机
         changeOrigin: true,
         pathRewrite: {
