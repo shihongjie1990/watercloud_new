@@ -6,10 +6,10 @@
         <a>更多></a>
       </div>
     </div>
-    <div class="tab">
+    <!-- <div class="tab">
       <a>组内公告</a>
       <a>站内公告</a>
-    </div>
+    </div> -->
     <div class="content">
       <ul>
         <li v-for="index in 5"
@@ -33,11 +33,31 @@ export default {
 
 <style lang="scss" scoped>
 .user-notice {
+  width: 35%;
   .title {
+    display: block;
+    background: #ddd;
+    padding: 0.03rem 0.1rem;
     & > div {
+      &:first-child {
+        font-size: 0.14rem;
+        display: inline-block;
+      }
+      &:last-child {
+        float: right;
+        line-height: 0.2rem;
+      }
       & > span:hover {
         cursor: pointer;
         text-decoration: underline;
+      }
+    }
+  }
+  .content {
+    & > ul {
+      padding: 10px;
+      li {
+        padding: 3px 0;
       }
     }
   }

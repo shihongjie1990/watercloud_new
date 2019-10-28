@@ -16,7 +16,7 @@ const routes = [
     children: [{
       path: 'user',
       name: 'user',
-      component: () => import('@/components/User/user-overview/index2.vue')
+      component: () => import('@/components/User/user-overview/index.vue')
     }, {
       path: 'staticData',
       name: 'staticData',

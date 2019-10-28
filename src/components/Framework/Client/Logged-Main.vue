@@ -1,6 +1,7 @@
 <template>
   <div class="logged-overview">
-    <div class="user-bg">
+    <div class="user-bg"
+         v-if="!isGovernment">
       <video src="static/video/mhbg.mp4"
              poster="static/images/mhbg.png"
              width="100%"
@@ -11,12 +12,19 @@
     </div>
     <div class="user-overview">
       <user-head @expandCommission="expandCommission"
-                 :commissionCount="commissionCount"></user-head>
+                 @changeHeadType="changeHeadType"
+                 :commissionCount="commissionCount"
+                 v-if="!isGovernment"></user-head>
+      <user-head-g @expandCommission="expandCommission"
+                   @changeHeadType="changeHeadType"
+                   :commissionCount="commissionCount"
+                   v-else></user-head-g>
       <user-commission class="user-commission"
                        @getMyCommission="getMyCommission"
                        :class="{active: expand}"
                        :commissions="commissions"></user-commission>
-      <div class="user-content">
+      <div class="user-content"
+           :class="{'content-g': isGovernment}">
         <keep-alive>
           <router-view ref='page' />
         </keep-alive>
@@ -29,6 +37,7 @@
 export default {
   components: {
     'user-head': () => import('./Header'),
+    'user-head-g': () => import('./HeaderG'),
     'user-commission': () => import('./my-commission2')
   },
   data() {
@@ -36,7 +45,8 @@ export default {
       menu: this.$store.state.LOGGED_MENU,
       expand: false,
       commissions: [],
-      commissionCount: 0
+      commissionCount: 0,
+      isGovernment: true
     }
   },
   methods: {
@@ -68,6 +78,9 @@ export default {
         // this.$set('commissions', commissionArr)
         this.commissions = commissionArr
       })
+    },
+    changeHeadType(flag) {
+      this.isGovernment = flag
     }
   },
   created() {
@@ -122,6 +135,16 @@ export default {
         height: calc(100vh - 0.7rem);
       }
     }
+  }
+}
+.user-content.content-g {
+  width: 1200px;
+  min-height: 100px;
+  margin: auto;
+  background: #fff;
+  & > div {
+    width: calc(100% - 40px) !important;
+    padding: 0 20px;
   }
 }
 </style>

@@ -1071,3 +1071,36 @@ ul.list-block > li > div > div:last-child {
   width: 1200px;
   margin: auto;
 }
+
+/* 政府版本 */
+.content-g .apps-module .app-icon>span {
+  color: #000!important;
+}
+
+.content-g .type-menu {
+  width: 1.5rem;
+}
+
+.content-g .type-menu .type-title {
+  box-shadow: 0px 0px 3px 1px #c3e3f7;
+}
+
+.content-g .type-menu .menu-content {
+  border: 1px solid #c3e3f7;
+  box-shadow: 0px 2px 3px 0px #c3e3f7!important;
+  color: #738d9c;
+}
+
+.content-g .type-menu .menu-content li:hover,
+.content-g .type-menu .menu-content li.active {
+  color: #fff;
+}
+
+.content-g .table-list {
+  width: 5rem!important;
+}
+
+.content-g .table-list>p {
+  margin: 0 20px!important;
+  background: rgba(19, 96, 131, 0.6)!important;
+}

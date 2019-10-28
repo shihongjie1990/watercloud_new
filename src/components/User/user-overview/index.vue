@@ -1,29 +1,16 @@
 <template>
   <div class="user-index">
-    <div class="user-bg">
-      <video src="static/video/mhbg.mp4"
-             width="100%"
-             height="600"
-             loop
-             muted
-             autoplay></video>
-    </div>
-    <div class="user-overview">
-      <user-head></user-head>
-      <div class="user-content">
-        <my-app></my-app>
-        <one-map></one-map>
-        <data-menu></data-menu>
-        <user-notice></user-notice>
-      </div>
-    </div>
+    <user-notice></user-notice>
+    <one-map :class="type"></one-map>
+    <data-menu :showTitle="true"
+               :class="type"></data-menu>
+    <my-app :have-btn="false"></my-app>
   </div>
 </template>
 
 <script>
 export default {
   components: {
-    'user-head': () => import('../../visitor-index/header'),
     'my-app': () => import('./layout/my-app'),
     'data-menu': () => import('./layout/data-menu'),
     'user-notice': () => import('./layout/notice'),
@@ -31,7 +18,12 @@ export default {
   },
   data() {
     return {
-
+      type: 'type2'
+    }
+  },
+  methods: {
+    changeType(type) {
+      this.type = type
     }
   }
 }
@@ -39,42 +31,18 @@ export default {
 
 <style lang="scss" scoped>
 .user-index {
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
-}
-.user-overview {
-  height: 7.67rem;
-  position: relative;
-  .user-content {
-    display: flex;
-    flex-wrap: wrap;
-    width: 12.3rem; // 1230px;
-    margin: auto;
-    margin-top: 0.1rem; // 10px;
-  }
-}
-.user-bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  video {
-    object-fit: fill;
-    height: 100%;
-    width: 100%;
+  & > div {
+    margin: 0.15rem 0 0 0.25rem;
   }
 }
 </style>
 
 <style lang="scss">
-@import '../../../assets/overview-ui/overview-ui.scss';
-
+@import '../../../assets/overview-ui/overview-ui2.scss';
 .title {
   display: flex;
-  padding: 0.25rem 0.35rem 0; // 25px 35px 0;
+  //   padding: 0.25rem 0.35rem 0; // 25px 35px 0;
+  padding: 0.1rem;
   div:first-child {
     font-size: 0.2rem; // 20px;
     color: #2ac1db;
