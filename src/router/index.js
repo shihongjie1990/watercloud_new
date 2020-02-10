@@ -93,7 +93,7 @@ function hrefToClient(netxUrl) {
 router.beforeEach((to, from, next) => {
   // let token = store.state.TOKEN
   let path = ''
-  /* if (to.name) {
+  if (to.name) {
     let info = Store.state.IS_LOGIN
     if (!info && to.name !== 'HomeOverview') {
       path = '/'
@@ -102,7 +102,7 @@ router.beforeEach((to, from, next) => {
     }
   } else {
     path = from.path
-  } */
+  }
   NProgress.start()
   path ? next(path) : next()
 })

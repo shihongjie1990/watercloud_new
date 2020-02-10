@@ -13,7 +13,7 @@ export default {
   components: {
     'my-app': () => import('./layout/my-app'),
     'data-menu': () => import('./layout/data-menu'),
-    'user-notice': () => import('./layout/notice'),
+    'user-notice': () => import('./layout/notice-scroll'),
     'one-map': () => import('./layout/one-map')
   },
   data() {

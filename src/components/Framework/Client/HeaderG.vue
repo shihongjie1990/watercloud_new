@@ -3,7 +3,7 @@
     <div class="header-g">
       <div class="head-top">
         <div class="head-g">
-          <img src="static/images/gov_bg.jpg"
+          <img src="static/images/50.jpg"
                alt=""
                class="gov-image">
           <img src="static/images/bg_title.png"
@@ -263,6 +263,7 @@ export default {
 }
 .user-menu {
   background: #3b6871;
+  // background: #c62222;
   margin-top: -14px;
   & > div {
     display: inline-block;
@@ -277,13 +278,16 @@ export default {
         font-size: 0.14rem;
         & > a {
           color: #fff;
+          // color: #c8e9ff;
         }
         &:hover {
           background: #0d515c;
+          // background: #b70505;
           border-radius: 5px;
           cursor: pointer;
           & > a {
             color: #c8e9ff;
+            // color: #fff;
             text-decoration: none;
           }
         }

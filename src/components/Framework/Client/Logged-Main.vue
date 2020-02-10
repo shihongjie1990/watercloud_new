@@ -46,7 +46,7 @@ export default {
       expand: false,
       commissions: [],
       commissionCount: 0,
-      isGovernment: true
+      isGovernment: false
     }
   },
   methods: {
